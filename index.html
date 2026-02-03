@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/479464c264.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+
+        <body>
+<div id="header">
+    <div class="container">
+      <nav> 
+    <img src="logo2.PNG" class="logo">
+
+    <img src="logo1.png" class="logo3">
+
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+    <ul id="sidemenu"> 
+        <li><a href="#header" onclick="closemenu()">We</a></li>
+        <li><a href="#about" onclick="closemenu()">About Us</a></li>
+        <li><a href="#game" onclick="closemenu()">Game</a></li>
+        <li><a href="#she" onclick="closemenu()">She</a></li>
+        <li><a href="#timeline" onclick="closemenu()">Timeline</a></li>
+        <li><a href="#emergency" onclick="closemenu()">Emergency</a></li>
+        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+    </ul> 
+</nav>
+    </div>
+</div>
+
+<div id="sticky-nav">
+    <div class="container">
+        <ul> 
+            <li><a href="#header">We</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#game">Game</a></li>
+            <li><a href="#she">She</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#emergency">Emergency</a></li>
+        </ul> 
+    </div>
+</div>
+<!------------------------our story------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="us.jpeg" alt="Our Picture">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Our Story</h1>
+              <p class="story-text">
+        Our story is a little different. It did not begin with love. It began with friendship—quiet, ordinary, and therefore rare.
+        <span id="dots">...</span>
+        <span id="more-text">
+On January 5th, 2022, a small Facebook message appeared on a screen. Nothing dramatic, no promises, no poetry. Just a simple "Hii" that somehow decided to stay. I don’t know how, but today—four years later—time has slipped past us, gently, without asking permission.<br><br>
+Those four years carried many moments. Ordinary days that later learned how to matter.Every day we went to Chawkbazar, especially to Nijam Sir’s English coaching. Sometimes I think I went there less for English and more for you.<br><br>
+Studying happened—here and there—almost as an optional subject. What truly mattered was the waiting.After coaching ended, I would stand downstairs, looking at the stairs, waiting for the moment you’d appear, step by step. That waiting became a habit. Almost a ritual.<br><br>
+Nearly one whole year passed like that—friendship growing quietly, comfortably.We invented reasons to see each other. I even attended exams for subjects you hated—Bangla, the worst of them all—just to meet once. We talked standing in the staircase room, stealing moments from time.<br><br>
+And time, mischievous as ever, kept running away. In the blink of an eye, we reached the HSC exams.After that, meetings became rare. Life pulled us into different directions. But distance found no victory—because hours on the phone replaced footsteps, and endless chats became part of our daily routine.<br><br>
+Somewhere along the way, without realizing it, we became each other’s best friend.Yet I stayed silent. I didn’t have the courage. Not then. Not even when my heart already knew the truth. I couldn’t tell you how I felt. I couldn’t give words to what lived inside me.<br><br>
+Until time, at last, opened a door. And I stepped through it.I finally said it: I love you. I have feelings for you. I want a future with you.From that moment to today, we have been together—walking forward, side by side.<br><br>
+This is my story. One day, I will sit quietly and listen as you tell me yours.
+        </span>
+    </p>
+    <button onclick="readStory()" id="readBtn">Read More</button>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('moments')">First Things</p>
+                    <p class="tab-links" onclick="opentab('dates')">Special Dates</p>
+                    <p class="tab-links" onclick="opentab('goals')">Promises</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="moments">
+                    <ul>
+                        <li><span>First Meet</span><br>BT Coaching er goli, 14 March 2022... january te jokhon ICT coaching krtesila, ami ekbar gesilam, coaching er niche chilam rki🙃 Dekhi nai🙂</li>
+                        <li><span>First time caught</span><br>Vai uncle hut kore kotteke je eshe gesilo😂</li>
+                        <li><span>First Meet Up</span><br>April 12 2025, jodio aage dekha hoisilo, tao kothao giye boshe aitay first time❣️</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="dates">
+                    <ul>
+                        <li><span>Special</span><br>Tomar sathe shobgula din e special💕 But the days we spent going to coaching🫠Maybe we never held hands while walking, yet we walked side by side, talking endlessly, sharing silence, sharing moments. That closeness meant everything. I badly miss those days yaar—the simplicity of them, the warmth of your presence, and the quiet happiness we didn’t even realize we were living back then.</li>
+                        <li><span>Tomar Birthday</span><br>13-9-2004, valo korso duniyay ashco, naato ami amar bestfriend koi paitam :) </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="goals">
+                    <ul>
+                        <li><span>Jhogra</span><br>Thakgga erokom serious level er jhogra kokono hoi nai, Allah dik na hok, Ar I love you more nahhh🙂 Jhogra holeo protibar solve kore ghumabo..</li>
+                        <li><span>Call</span><br>Allah amra first time kokhon phone e kotha bolsi mone portese nah vai🙃 But hae amar tomar gossip shunte onek valo laage, maybe etao valobashar part🖤🩷 Jotoi mon kharap ar raag hok amra shobshomoy call dibo hae!?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------game------------------------------------>
+<div id="game">
+    <div class="container">
+        <h1 class="sub-title" style="text-align: center;">Cholo ekta game khelo</h1>
+            <div id="game-container">
+            
+            <div class="floating-hearts">
+                <span class="heart">❤️</span>
+                <span class="heart">💖</span>
+                <span class="heart">❤️</span>
+                <span class="heart">💕</span>
+                <span class="heart">💗</span>
+    <span class="heart">❤️</span>
+    <span class="heart">💓</span>
+    <span class="heart">💖</span>
+            </div>
+
+            <div class="side-quote left-quote">"Ummeed ye seene mein leke main hoo jee raha</div>
+            <div class="side-quote right-quote">Kabhi tu mile kahe mujhse ke main hoon baas tera"</div>
+
+            <div id="start-screen">
+                <button class="btn" onclick="startGame()">Play</button>
+            </div>
+
+            <div id="play-board" style="display: none;">
+                <img id="game-img" src="us2.PNG" alt="Reaction">
+                <h2 id="game-question">Do you love me?💗</h2>
+                <div class="game-btns">
+                    <button class="btn" onclick="sayYes()">Yes</button>
+                  <button class="btn" id="no-btn" onclick="moveNo()">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------she-------------------------------------------------->
+<div id="she">
+    <div class="container">
+        <h1 class="sub-title" style="text-align: center; font-size: 35px; margin-bottom: 30px;">
+            That's my favorite part see my cutie ekdom aador
+        </h1>
+
+        <div class="work-list">
+            <div class="work" onclick="toggleWork(this)"><img src="her1.jpeg"><div class="layer"><h3>Ekdom lokkhi</h3><p>Beshi beshi shari porba</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her2.jpeg"><div class="layer"><h3>Rosie</h3><p>Ador lagtese</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her3.jpeg"><div class="layer"><h3>Cherry</h3><p>Dhore ekta thappor dibo</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her4.jpeg"><div class="layer"><h3>Sweetie</h3><p>First time sharite dekhe noton kore crush khaisi</p></div></div>
+        
+            <div class="work" onclick="toggleWork(this)"><img src="her5.PNG"><div class="layer"><h3>Hottie</h3><p>Jodio AI made, lal shari te ekdom lal pori lagtese</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her6.jpeg"><div class="layer"><h3>Keep Smiling</h3><p>Hashita shundor, Allah dekho tomar dat ekta amar moto</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her7.jpeg"><div class="layer"><h3>Ful</h3><p>Thak abar boltesi, beshi beshi shari porio</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her8.jpeg"><div class="layer"><h3>Pookie</h3><p>Mukh lukai rakhso keno, ammuke dekhacci nah toh</p></div></div>
+            
+            <div class="work" onclick="toggleWork(this)"><img src="her9.jpeg"><div class="layer"><h3>Pretty</h3><p>Gal dhore tante iccah kortese</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her10.jpeg"><div class="layer"><h3>Cutie</h3><p>Ekdom cute lagtese, Jewelry gula valo manaise</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her11.jpeg"><div class="layer"><h3>Cinderella</h3><p>Chobi ta cute hoise, ador ador</p></div></div>
+            <div class="work" onclick="toggleWork(this)"><img src="her12.jpeg"><div class="layer"><h3>Maya</h3><p>Allah hashita ki shundor..Lokkhi ekta...</p></div></div>
+        </div>
+
+        <div class="she-interactive-btns" style="text-align: center; margin-top: 50px;">
+            <button class="btn she-btn" onclick="openLetter()">Here's my word for you</button>
+            <button class="btn she-btn" onclick="openCutePic()">Ekta cute chobi dekhba?</button>
+            <button class="btn she-btn" onclick="giveFlowers()">Cutie you deserve flower, click me</button>
+        </div>
+    </div>
+</div>
+
+<div id="letter-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeLetter()">&times;</span>
+        <h2 style="font-family: 'Dancing Script', cursive; color: #ff4d6d; font-size: 40px;">My Word for You</h2>
+        <p class="letter-text">
+            Dear Cutie,<br><br>
+            Ornee, loving you was never something I planned—it happened quietly, the way the most beautiful truths do. You entered my life as a friend, and without making any noise, you became my home. Every memory with you, from the simplest days to the longest nights, lives gently inside my heart. Always stay happy, always smiling-vai tomar baka hashi ta ki shundor🫠 Mashallah Mashallah❤️Take care of yourself, take care of your heart-jotno niyo lokkhiti❤️‍🩹 Dua kori-one day you become a great doctor, someone who heals not only bodies, but hearts as well💟 If life is kind, I want to grow old remembering these moments, grateful that out of all the paths in the world, our hearts found each other. You are not just a part of my story—you are the reason it feels worth telling💞❣️
+        </p>
+    </div>
+</div>
+<div id="cutepic-modal" class="modal">
+    <div class="modal-content" style="max-width: 500px;">
+        <span class="close-btn" onclick="closeCutePic()">&times;</span>
+        <div style="text-align: center;">
+            <img src="cute_us.PNG" style="max-width: 100%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+            <h2 style="font-family: 'Dancing Script', cursive; color: #ff4d6d; font-size: 35px; margin-top: 20px;">
+                What if it could be usss!?
+            </h2>
+        </div>
+    </div>
+</div>
+
+<div id="flower-container"></div>
+<!------------------------timeline-------------------------------------------------->
+
+<div id="timeline">
+    <div class="container">
+        <h1 class="sub-title" style="text-align: center;">Our Timeline</h1>
+        
+        <div class="timeline-container">
+            <div class="timeline-line">
+                <span class="line-heart">❤️</span>
+                <span class="line-heart">💖</span>
+                <span class="line-heart">💗</span>
+            </div>
+
+<div class="timeline-item left">
+    <div class="timeline-dot"><i class="fa-solid fa-comment-dots"></i></div>
+    <div class="timeline-content">
+        <h3>Jan 5, 2022</h3>
+        <div class="reveal-text">
+            <p>"Hii" er reply keno diso seta niya afsos korte korte akjke 4 bochor, jai hok Thank you you replied❤️</p>
+            <div class="media-btns">
+                <button class="m-btn" onclick="openMedia('ss_fb.JPEG', 'image')">SS</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item right">
+    <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+    <div class="timeline-content">
+        <h3>Coaching Days</h3>
+        <div class="reveal-text">
+            <p>Jai hok egula vular nah,oi din gula na hole ajker amra kichui nah, tomake ami koi petam bolo, Lucky to have you🩷 Amader ekta chobi ase.. Dekhba?</p>
+            <div class="media-btns">
+                <button class="m-btn" onclick="openMedia('coaching_pic.JPEG', 'image')">P</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item left">
+    <div class="timeline-dot"><i class="fa-brands fa-meetup"></i></div>
+    <div class="timeline-content">
+        <h3>First Meet</h3>
+        <div class="reveal-text">
+            <p>Onekdin por raaji koraisi je ektu kore dekha korbo, onek toh chat hoise, toh 14 march ami aage theke giye daray chilam kokhon college theke ashba🚶‍♂️</p>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item right">
+    <div class="timeline-dot"><i class="fa-solid fa-timeline"></i></div>
+    <div class="timeline-content">
+        <h3>Meet After 1.6 Years</h3>
+        <div class="reveal-text">
+            <p>HSC sesh howar por theke amader ekdom dekha hoto nah, tmke bolchilam onekbar je asho meet kori, bolte bolte prai 1 bochor 6 mash par hoise, erpor ekdin boimela te..💖</p>
+            <div class="media-btns">
+                <button class="m-btn" onclick="openMedia('meet_video.MP4', 'video')">V</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item left">
+    <div class="timeline-dot"><i class="fa-solid fa-heart"></i></div>
+    <div class="timeline-content">
+        <h3>First Date</h3>
+        <div class="reveal-text">
+            <p>Thakgga raag korio nah, amra date e jai ni, etake date toh bola jai nah, Cholo etake ekta nam di, Best-friend Date🤍🖤 Chobita ki cute💞</p>
+            <div class="media-btns">
+                <button class="m-btn" onclick="openMedia('first_date.JPEG', 'image')">P</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item right">
+    <div class="timeline-dot"><i class="fa-regular fa-comments"></i></div>
+    <div class="timeline-content">
+        <h3>Medical Result</h3>
+        <div class="reveal-text">
+            <p>Tomar jonno onek happy lagsilo je aibar career ta safe houe gese, Kintu jaano oi prothom barer moto feel korsi ami tomake koto valobashi, Like result shune kushi howar kotha, amar emon kanna ashce lagtesilo amar ekta part amar theke keu niye jacche...</p>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item left">
+    <div class="timeline-dot"><i class="fa-solid fa-cake-candles"></i></div>
+    <div class="timeline-content">
+        <h3>Your Birthday</h3>
+        <div class="reveal-text">
+            <p>Tomar birthday korar iccah chilo toh onek, toh sejonno upay o paisi. Koto jor korsilam je ektu kore cake khawai di, khau ni..Dekho nah tumi hashle ki cute laage, Lokkhi ekta💝</p>
+            <div class="media-btns">
+                <button class="m-btn" onclick="openMedia('her_bday.MOV', 'video')">V</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item right">
+    <div class="timeline-dot"><i class="fa-solid fa-wine-glass-empty"></i></div>
+    <div class="timeline-content">
+        <h3>My Birthday</h3>
+        <div class="reveal-text">
+            <p>Owh amar birthday er best gift chilo tomar presence,Coincidentally tumio ctg chila.. Amader ai pic ta shundor hoise🙃 Duijonkei babu babu lagtese😂</p>
+            <div class="media-btns">
+                <button class="m-btn" onclick="openMedia('my_bday.JPEG', 'image')">P</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item left">
+    <div class="timeline-dot"><i class="fa-regular fa-face-kiss-wink-heart"></i></div>
+    <div class="timeline-content">
+        <h3>The Promise</h3>
+        <div class="reveal-text">
+            <p>You know I am not going anywhere. No matter how far you go, I am not leaving. I will stay, I will follow, I will keep teasing you, again and again, for as long as time allows me to smile. I will tease you until my hair turns white and my teeth no longer remain...</p>
+        </div>
+    </div>
+</div>
+
+<div class="timeline-item right">
+    <div class="timeline-dot"><i class="fa-solid fa-clover"></i></div>
+    <div class="timeline-content">
+        <h3>The Proposal</h3>
+        <div class="reveal-text">
+            <p>Ilysm but Idk how to explain but I'll walk side by side in your every step, i'll blindly follow your path, i'll always try to make you laugh..I choose you❤️I love you forever, ever & ever🤞🩷</p>
+            <div class="media-btns">
+                <button class="m-btn" onclick="openMedia('proposal_pic.JPEG', 'image')">P</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="media-modal">
+    <div class="media-modal-content">
+        <span class="close-media" onclick="closeMedia()">&times;</span>
+        <div id="media-display"></div>
+    </div>
+</div>
+
+</div>
+    <div class="pulsing-present">
+            <div class="pulse-heart"><i class="fa-solid fa-heart"></i></div>
+            <p>Ekhon o tomar matha khacci kintu kokhon o ekla charbo nah🥱 Forever to go😙🖤</p>
+        </div>
+    </div>
+</div>
+
+<!------------------------emergency------------------------------------------------------>
+<div id="emergency">
+    <div class="container">
+        <h1 class="sub-title center">Emergency Hotline</h1>
+        
+        <div class="mood-box">
+            <p>Vallagtese na? Ami abar kichu bujte vul korsi.</p>
+            <div class="mood-btns">
+                <button class="mood-btn" onclick="setMood('angry')">Rege aso?</button>
+                <button class="mood-btn" onclick="setMood('sad')">Mon kharap?</button>
+                <button class="mood-btn" onclick="setMood('miss')">Naki miss korteso?</button>
+            </div>
+            <div id="mood-message" class="mood-message"></div>
+        </div>
+
+<div class="mailbox-grid">
+    <div class="contact-card">
+     <h3>To Poka who decided to stay forever 💌</h3>
+        <form action="https://formspree.io/f/mrepopqo" method="POST">          
+            <input type="text" name="sender_name" placeholder="Moni" required>
+            <textarea name="message" rows="4" placeholder="Hiiiie cutieeeee" required></textarea>
+            
+            <button type="submit" class="btn btn2">Send to Poka</button>
+        </form>
+    </div>
+
+    <div class="contact-card">
+                       <h3>To my Cinderella who is the most beautiful of all💖</h3>
+
+        <form action="https://formspree.io/f/mlgnkbrd" method="POST">
+           
+            
+            <input type="text" name="sender_name" placeholder="Poka" required>
+            <textarea name="message" rows="4" placeholder="Shobdike block Kheye aikhane ashci..." required></textarea>
+            
+            <button type="submit" class="btn btn2">Send to Moni</button>
+        </form>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Made with <i class="fa-solid fa-heart"></i> by Sahad</p>
+</div>
+
+<div id="music-container">
+    <button id="music-btn" onclick="toggleMusic()">
+        <i id="music-icon" class="fa-solid fa-music"></i>
+    </button>
+    <audio id="bg-song" loop>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<script>
+    function toggleMusic() {
+        const song = document.getElementById("bg-song");
+        const icon = document.getElementById("music-icon");
+        
+        if (song.paused) {
+            song.play();
+            icon.classList.remove("fa-music");
+            icon.classList.add("fa-pause"); // Play hole pause icon hobe
+            document.getElementById("music-btn").classList.add("spinning");
+        } else {
+            song.pause();
+            icon.classList.remove("fa-pause");
+            icon.classList.add("fa-music"); // Pause hole music icon hobe
+            document.getElementById("music-btn").classList.remove("spinning");
+        }
+    }
+</script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        // Prothome shobgulo active class soriye fela
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        // Click kora tab-e active class add kora
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    function readStory() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more-text");
+        var btnText = document.getElementById("readBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read More";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read Less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+<script>
+let step = 0;
+const gameImages = ["us2.PNG", "us3.PNG", "us1.PNG", "back1.JPG"]; 
+
+function startGame() {
+    document.getElementById("start-screen").style.display = "none";
+    document.getElementById("play-board").style.display = "block";
+    step = 0;
+}
+
+function moveNo() {
+    step++;
+    const noBtn = document.getElementById("no-btn");
+    const question = document.getElementById("game-question");
+    const img = document.getElementById("game-img");
+
+    // 1. Image Change Logic
+    if (step < gameImages.length) {
+        img.src = gameImages[step];
+    }
+
+    // 2. Text Change Logic
+    if (step === 1) {
+        question.innerHTML = "Arreh ami tomake onek jotno korbo💓.. Don't you love me?";
+        noBtn.innerHTML = "Absolutely No";
+    } else if (step === 2) {
+        question.innerHTML = "Please please tumi vhebe dheko💕.. Do you love me?";
+        noBtn.innerHTML = "No";
+    }
+
+    // 3. Button Moving Logic (Mobile Safe)
+    if (step >= 3) {
+        noBtn.style.position = "fixed"; 
+        
+        const padding = 60; 
+        const maxX = window.innerWidth - noBtn.offsetWidth - padding;
+        const maxY = window.innerHeight - noBtn.offsetHeight - padding;
+        
+        const randomX = Math.max(padding, Math.floor(Math.random() * maxX));
+        const randomY = Math.max(padding, Math.floor(Math.random() * maxY));
+
+        noBtn.style.left = randomX + "px";
+        noBtn.style.top = randomY + "px";
+        
+        // No button-er z-index Yes-er cheye kom rakhlam jate block na kore
+        noBtn.style.zIndex = "150"; 
+    }
+}
+
+// YES Button Function - Eita add koro thikmoto
+function sayYes() {
+    const question = document.getElementById("game-question");
+    const noBtn = document.getElementById("no-btn");
+    const img = document.getElementById("game-img");
+
+    // 1. Text change
+    question.innerHTML = "Yes... I Knew It ❤️ Hahaa faas geya nah mere jaal meh.... I Love You more <3 💗";
+    
+    // 2. No button puro gayeb kore dao jate ar jhamela na kore
+    noBtn.style.display = "none";
+    
+    // 3. Final Happy Image (Jodi thake)
+    img.src = "us_happy.PNG"; 
+
+    // 4. Ekti extra effects (Optional)
+    question.style.color = "#000000";
+    question.style.fontSize = "26px";
+}
+</script>
+
+<script>
+
+// 1. Gallery click toggle
+function toggleWork(element) {
+    // Age onno kono active thakle remove kora (optional, ekta ekta boro hobe)
+    document.querySelectorAll('.work').forEach(w => {
+        if(w !== element) w.classList.remove('active');
+    });
+    element.classList.toggle('active');
+}
+
+// 2. Letter Logic
+function openLetter() {
+    document.getElementById("letter-modal").style.display = "block";
+}
+function closeLetter() {
+    document.getElementById("letter-modal").style.display = "none";
+}
+
+// 3. Flower Bouquet Logic
+function giveFlowers() {
+    const container = document.getElementById("flower-container");
+    const flowers = ['🌹', '🌸', '🌷', '🌻', '💐', '💗'];
+    
+    for (let i = 0; i < 30; i++) {
+        setTimeout(() => {
+            const flower = document.createElement("div");
+            flower.className = "falling-flower";
+            flower.innerHTML = flowers[Math.floor(Math.random() * flowers.length)];
+            flower.style.left = Math.random() * 100 + "vw";
+            flower.style.animationDuration = (Math.random() * 2 + 2) + "s";
+            container.appendChild(flower);
+            
+            // Remove after animation
+            setTimeout(() => flower.remove(), 4000);
+        }, i * 100);
+    }
+}
+// Cute Pic Modal Logic
+function openCutePic() {
+    document.getElementById("cutepic-modal").style.display = "block";
+}
+
+function closeCutePic() {
+    document.getElementById("cutepic-modal").style.display = "none";
+}
+
+// Window-r baire click korle jate bondho hoy tar logic (Existing logic thakle update koro)
+window.onclick = function(event) {
+    let letterModal = document.getElementById("letter-modal");
+    let cuteModal = document.getElementById("cutepic-modal");
+    if (event.target == letterModal) {
+        letterModal.style.display = "none";
+    }
+    if (event.target == cuteModal) {
+        cuteModal.style.display = "none";
+    }
+}
+
+</script>
+
+<script>
+    function openMedia(src, type) {
+    const modal = document.getElementById("media-modal");
+    const display = document.getElementById("media-display");
+    display.innerHTML = ""; // Clear previous content
+
+    if (type === 'image') {
+        display.innerHTML = `<img src="${src}" alt="Memory">`;
+    } else if (type === 'video') {
+        display.innerHTML = `<video src="${src}" controls autoplay style="width:100%;"></video>`;
+    }
+    modal.style.display = "flex";
+}
+
+function closeMedia() {
+    const modal = document.getElementById("media-modal");
+    const display = document.getElementById("media-display");
+    display.innerHTML = ""; // Stop video playback when closing
+    modal.style.display = "none";
+}
+
+// Existing window.onclick-er bhetore update:
+window.onclick = function(event) {
+    let letterModal = document.getElementById("letter-modal");
+    let cuteModal = document.getElementById("cutepic-modal");
+    let mediaModal = document.getElementById("media-modal");
+    
+    if (event.target == letterModal) letterModal.style.display = "none";
+    if (event.target == cuteModal) cuteModal.style.display = "none";
+    if (event.target == mediaModal) closeMedia(); // Modal-er baire click korle media bondho hobe
+}
+</script>
+<script>
+function setMood(mood) {
+    const msgBox = document.getElementById("mood-message");
+    const messages = {
+        'angry': "Ami sure abar kono vul korsi, Sorry ami kaane dhortesi :) Sorry Moni <3",
+        'sad': "Aidhike asho ami joray dhori <3",
+        'miss': "I miss you more ❤️ & You know I love youuuuuu💗"
+    };
+    
+    msgBox.style.opacity = 0;
+    setTimeout(() => {
+        msgBox.innerHTML = messages[mood];
+        msgBox.style.opacity = 1;
+        msgBox.style.color = "#ff4d6d";
+        msgBox.style.fontWeight = "bold";
+        msgBox.style.marginTop = "20px";
+    }, 200);
+}
+
+</script>
+            <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+        </body>
+
+</html>
