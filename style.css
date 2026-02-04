@@ -6,8 +6,8 @@
 }
 .header-text h1, .sub-title, .tab-links {
     font-family: 'Dancing Script', cursive;
-    font-size: 50px; /* Style onujayi boro-choto korte paro */
-    color: #ff4d6d; /* Couple site-er jonno pinkish color use korte paro */
+    font-size: 50px;
+    color: #ff4d6d;
 }
 html{
     scroll-behavior: smooth;
@@ -16,7 +16,6 @@ body{
     background: #ff758f;
     color: #000000;
 }
-/* Header-ke clean rakhar jonno */
 #header {
     width: 100%;
     height: 100vh;
@@ -25,46 +24,43 @@ body{
     background-position: center -0.5%;
     position: relative;
     display: flex;
-    align-items: center; /* Content majhkane rakhar jonno */
+    align-items: center; 
 }
 .logo {
-    width: 140px; /* Logo-r size */
-    cursor: pointer;
-    position: absolute; /* Extra safety-r jonno */
-    top: 30px;
-    left: 10%; /* Container align rakhar jonno */
-}
-.logo3 {
-    width: 140px; /* Size SAHAD logo-r motoi thakbe */
+    width: 140px;
     cursor: pointer;
     position: absolute; 
     top: 30px;
-    right: 10%; /* Eta right side theke 10% gap rakhbe */
+    left: 10%; 
+}
+.logo3 {
+    width: 140px;
+    cursor: pointer;
+    position: absolute; 
+    top: 30px;
+    right: 10%; 
     z-index: 10;
 }
-/* Notun Navigation Bar styling (Header-er niche thakbe) */
 #sticky-nav {
     background: #fff; 
-    padding: 5px 0; /* Padding komiye 5px kora holo jate width/height choto lage */
+    padding: 5px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Halka shadow */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
 }
 #sticky-nav ul {
-    display: flex;             /* Flex use korle ek line-e asha nishchit */
-    justify-content: center;   /* Shobgulo majhkane thakbe */
+    display: flex;             
+    justify-content: center; 
     align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 #sticky-nav ul li {
-    margin: 5px 25px; /* Margin-o ektu komano holo */
+    margin: 5px 25px; 
 }
-
 #sticky-nav ul li a {
     color: #000000;
     text-decoration: none;
@@ -73,8 +69,6 @@ body{
     position: relative;
     padding: 10px 0;
 }
-
-/* Hover line effect (ager motoi thakbe) */
 #sticky-nav ul li a::after {
     content: '';
     width: 0;
@@ -93,41 +87,34 @@ body{
 #about {
     background: #fff5f6;
     padding: 80px 0;
-    color: #333; /* Dark background thakle white (#fff) koro */
+    color: #333;
 }
-
 .row {
     display: flex;
-    justify-content: space-around; /* Duidike shoman khali jayga rakhbe */
+    justify-content: space-around;
     align-items: center; 
     flex-wrap: wrap;
 }
-
 .about-col-1 {
     flex-basis: 40%;
     margin-left: 2%;
 }
-
 .about-col-1 img {
-    width: 100%; /* Column-er pura jayga nibe */
-    max-width: 450px; /* Ekebare beshi boro jate na hoy tar limit */
+    width: 100%; 
+    max-width: 450px;
     border-radius: 15px;
 }
-
 .about-col-2 {
-    flex-basis: 50%; /* Text column-ke ektu komano holo balance korar jonno */
+    flex-basis: 50%;
     padding-right: 5%; 
 }
 .container {
-    padding: 10px 10%; /* Left ar Right e 10% kore gap thakbe */
+    padding: 10px 10%;
 }
-
-/* Text alignment thik korar jonno */
 .about-col-2 p {
-    text-align: justify; /* Text gulo duidike shoman thakbe */
+    text-align: justify;
     margin-bottom: 20px;
 }
-
 .sub-title {
     margin-top: 0;
     margin-bottom: 20px;
@@ -136,7 +123,6 @@ body{
     display: flex;
     margin: 10px 0 10px;
 }
-
 .tab-links {
     margin-right: 50px;
     font-size: 18px;
@@ -144,12 +130,11 @@ body{
     cursor: pointer;
     position: relative;
 }
-
 .tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff4d6d; /* Couple theme-er pink color */
+    background: #ff4d6d;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -163,14 +148,12 @@ body{
     margin: 0;
     padding: 0;
 }
-
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
-    line-height: 0.8; /* Text-er majher spacing control korbe */
+    line-height: 0.8;
     color: #333;
 }
-
 .tab-contents ul li span {
     color: #ff4d6d;
     font-size: 14px;
@@ -179,17 +162,14 @@ body{
     margin-bottom: 0px;
     line-height: 1.2;
 }
-
 .tab-contents {
     display: none;
 }
-
 .tab-contents.active-tab {
     display: block;
 }
-/* Story Text and Button Styling */
 #more-text {
-    display: none; /* Default e baki story lukiye rakha */
+    display: none; 
 }
 
 #readBtn {
@@ -200,32 +180,29 @@ body{
     border-radius: 20px;
     cursor: pointer;
     font-size: 14px;
-    margin-top: 5px;   /* Story text theke gap */
-    margin-bottom: 5px; /* Nicher tabs theke gap */
+    margin-top: 5px;   
+    margin-bottom: 5px;
     transition: 0.3s;
     display: inline-block;
 }
-
 #readBtn:hover {
-    background: #08196F; /* Hover korle blue color hobe */
+    background: #08196F;
 }
-
 .story-text {
     line-height: 1.6;
-    margin-bottom: 5px; /* Button er upore gap komano */
+    margin-bottom: 5px; 
 }
 /*---------------------------------------game---------------------------------*/
 #game {
     padding: 100px 0;
     text-align: center;
-    background: #fff5f6; /* About er sathe match rakhar jonno */
+    background: #fff5f6; 
     min-height: 80vh;
 }
-
 #game-container {
     margin-top: 30px;
     position: relative; 
-    min-height: 500px; /* Game-er area jate boro thake button move korar jonno */
+    min-height: 500px;
     width: 100%;
     overflow: hidden; 
 }
@@ -235,9 +212,8 @@ body{
     margin-bottom: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
 .game-btns {
-    margin-top: 10px; /* Text theke ektu niche thakbe */
+    margin-top: 10px; 
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -250,16 +226,14 @@ body{
     border-radius: 25px;
     cursor: pointer;
     font-size: 18px;
-    margin: 0;                 /* Margin 0 kora holo Flex gap use korar jonno */
+    margin: 0;          
     transition: 0.3s;
 }
-
 #no-btn {
-    position: relative; /* Step 3 er age normal thakbe */
+    position: relative; 
     transition: 0.1s ease;
     z-index: 10;
 }
-/* Floating Hearts Styling */
 .floating-hearts .heart {
     position: absolute;
     font-size: 15px;
@@ -280,19 +254,17 @@ body{
     0%, 100% { transform: translateY(0) rotate(0deg); }
     50% { transform: translateY(-20px) rotate(20deg); }
 }
-
 .side-quote {
     position: absolute;
-    /* Sposto font use kora holo */
     font-family: 'Dancing Script', cursive; 
-    font-size: 30px; /* Size bariye 30px kora holo jate bhalomoto dekha jay */
-    color: #8b0000; /* Ekdom Deep Dark Red color jate pink background-e fute uthe */
-    width: 300px;   /* Width arektu barano holo jate likha na bhange */
-    font-weight: 800; /* Font arektu mota/bold kora holo */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9); /* Shada shadow-ta arektu barano holo focus-er jonno */
+    font-size: 30px; 
+    color: #8b0000; 
+    width: 300px; 
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9); 
     opacity: 1; 
     z-index: 5;
-    pointer-events: none; /* Jate button click-e kono jhamela na kore */
+    pointer-events: none;
 }
 .left-quote {
     left: 30px;
@@ -300,14 +272,12 @@ body{
     text-align: left;
     transform: rotate(-10deg);
 }
-
 .right-quote {
     right: 30px;
     top: 45%;
     text-align: right;
     transform: rotate(10deg);
 }
-
 @media (max-width: 1000px) {
     .side-quote {
         width: 150px;
@@ -315,39 +285,33 @@ body{
     }
 }
 /*---------------------------------------she---------------------------------------------*/
-/* She Section Styling */
 #she {
     padding: 80px 0;
-    background: #fff5f6; /* Game section-er sathe match */
+    background: #fff5f6;
 }
-
 .work-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* User request: ek row te 4 ti kore */
-    grid-gap: 15px; /* Spacing ektu komano holo jate screen bhorat thake */
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 15px; 
 }
-
 .work {
     border-radius: 15px;
     position: relative;
     overflow: hidden;
-    cursor: pointer; /* Clickable indicator */
+    cursor: pointer; 
     transition: 0.5s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
 .work img {
     width: 100%;
-    height: 300px; /* 4 ti column hole height ektu komano aesthetic lage */
+    height: 300px;
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.5s;
 }
-/* Interaction: Shudhu click korle active hobe */
 .work.active img {
     transform: scale(1.1);
 }
-
 .work .layer {
     width: 100%;
     height: 0;
@@ -363,26 +327,19 @@ body{
     transition: height 0.5s;
     overflow: hidden;
 }
-
 .work.active .layer {
-    height: 100%; /* Click korle layer show hobe */
+    height: 100%;
 }
-
 .work .layer h3 {
     color: #fff;
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
 }
-
 .work .layer p { color: #fff; font-size: 14px; }
-
-/* Buttons styling */
 .she-btn {
     margin: 10px;
-    min-width: 250px; /* Shob button jate ek-i size-er hoy */
+    min-width: 250px; 
 }
-
-/* Letter Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -391,7 +348,6 @@ body{
     width: 100%; height: 100%;
     background: rgba(0,0,0,0.6);
 }
-
 .modal-content {
     background: #fff;
     padding: 30px;
@@ -417,14 +373,11 @@ body{
     margin-top: 20px;
     text-align: justify;
 }
-
 .close-btn {
     position: absolute;
     right: 20px; top: 10px;
     font-size: 30px; cursor: pointer;
 }
-
-/* Flower Falling Animation */
 #flower-container {
     position: fixed;
     top: 0; left: 0;
@@ -432,17 +385,14 @@ body{
     pointer-events: none;
     z-index: 999;
 }
-
 .falling-flower {
     position: absolute;
     font-size: 25px;
     animation: fall 3s linear forwards;
 }
-
 @keyframes fall {
     to { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
-
 @media (max-width: 768px) {
     .work-list { grid-template-columns: 1fr; }
     .modal-content { width: 90%; }
@@ -465,8 +415,6 @@ body{
     max-width: 1000px;
     margin: 50px auto;
 }
-
-/* Central Line */
 .timeline-line {
     position: absolute;
     width: 4px;
@@ -475,8 +423,6 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-
-/* Floating Hearts on Line */
 .line-heart {
     position: absolute;
     left: 50%;
@@ -489,17 +435,13 @@ body{
 .line-heart:nth-child(1) { top: 10%; }
 .line-heart:nth-child(2) { top: 50%; animation-delay: 1s; }
 .line-heart:nth-child(3) { top: 90%; animation-delay: 2s; }
-
-/* Timeline Items Zig-Zag */
 .timeline-item {
     padding: 20px 40px;
     position: relative;
     width: 50%;
 }
-
 .timeline-item.left { left: 0; text-align: right; }
 .timeline-item.right { left: 50%; text-align: left; }
-
 .timeline-dot {
     position: absolute;
     width: 40px; height: 40px;
@@ -516,11 +458,9 @@ body{
 .left .timeline-dot { right: -20px; }
 .right .timeline-dot { left: -20px; }
 .timeline-dot i {
-    font-size: 20px; /* Icon-er size ekhon theke control korte parbe */
-    color: #ff4d6d; /* Icon-er color pink korlam */
+    font-size: 20px; 
+    color: #ff4d6d;
 }
-
-/* Hover korle icon-er color change hobe */
 .timeline-item:hover .timeline-dot i {
     color: #fff;
     transition: 0.3s;
@@ -538,21 +478,16 @@ body{
     color: #ff4d6d;
     margin-bottom: 10px;
 }
-
-/* Pulsing Present */
 .pulsing-present {
     text-align: center;
     margin-top: 50px;
 }
-
 .pulse-heart {
     font-size: 50px;
     animation: heartBeat 1.5s infinite;
-        color: #ff4d6d;
-
-    display: inline-block;
+     color: #ff4d6d;
+     display: inline-block;
 }
-/* Hover to Reveal Details */
 .reveal-text {
     max-height: 0;
     opacity: 0;
@@ -560,45 +495,38 @@ body{
     transition: all 0.5s ease-in-out;
     overflow: hidden;
 }
-
 .timeline-content:hover .reveal-text {
-    max-height: 150px; /* Text boro hole eta barate paro */
+    max-height: 150px; 
     opacity: 1;
     transform: translateY(0);
     margin-top: 10px;
 }
-
-/* Hover korle highlight hobe */
 .timeline-content:hover {
-    background: #fffafa !important; /* Halka pink background */
+    background: #fffafa !important;
     border: 2px solid #ff4d6d !important;
 }
 .timeline-item:hover .timeline-dot {
-    transform: scale(1.3); /* Icon-ta ektu boro hobe hover korle */
+    transform: scale(1.3);
     transition: 0.3s ease;
     background: #ff4d6d;
     color: #fff;
 }
-
-/* Vertical dotted line on hover for extra aesthetic */
 .timeline-content {
     cursor: pointer;
     border: 2px solid transparent;
 }
 .reveal-text p {
-    font-size: 12px !important; /* Tumi joto choto chao eikhane figure change koro */
+    font-size: 12px !important; 
     line-height: 1.4;
-    color: #555; /* Ektu halka kalo jate shundor lage */
+    color: #555;
     margin-bottom: 8px;
 }
 
-/* Mobile-e jodi aro choto korte chao */
 @media (max-width: 768px) {
     .reveal-text p {
         font-size: 11px !important;
     }
 }
-
 @keyframes heartBeat {
     0% { transform: scale(1); }
     15% { transform: scale(1.3); }
@@ -612,14 +540,12 @@ body{
     50% { transform: translateX(-50%) translateY(-15px); }
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .timeline-line { left: 31px; }
     .timeline-item { width: 100%; text-align: left; padding-left: 70px; }
     .timeline-item.right { left: 0; }
     .timeline-dot { left: 10px !important; }
 }
-/* Media Buttons styling */
 #media-modal {
     display: none; 
     position: fixed; 
@@ -629,17 +555,14 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
-    align-items: center; /* Vertical Center */
-    justify-content: center; /* Horizontal Center */
+    align-items: center; 
+    justify-content: center;
 }
-
-/* Modal Content Styling */
 .media-modal-content {
     position: relative;
     max-width: 90%;
     text-align: center;
 }
-
 #media-display img, #media-display video {
     max-width: 100%;
     max-height: 80vh;
@@ -683,15 +606,12 @@ body{
 }
 
 /* ----------------------------------------emergency--------------------- --------------------------------*/
-/* Emergency Section */
 #emergency {
     padding: 80px 0;
     background: #fff0f3;
 }
-
-/* Container-ke center kora */
 #emergency .container {
-    max-width: 1100px; /* Ektu boro width jate pashapashi thakle messy na lage */
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -725,11 +645,10 @@ body{
     margin-bottom: 40px;
 }
 
-/* Main Grid: Pashapashi anar logic */
 .mailbox-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Duita soman column */
-    gap: 30px; /* Majhkhane faka jayga */
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
     justify-content: center;
 }
 
@@ -740,14 +659,11 @@ body{
     box-shadow: 0 10px 30px rgba(255, 77, 109, 0.1);
     border: 1px solid #ffdeeb;
 }
-
 .contact-card h3 {
     text-align: center;
     color: #ff4d6d;
     margin-bottom: 20px;
 }
-
-/* Form Styles */
 form input, form textarea {
     width: 100%;
     border: 0;
@@ -768,15 +684,12 @@ form input, form textarea {
     color: #fff;
     animation: heartbeat 1.2s infinite;
 }
-
-/* Music Button Style */
 #music-container {
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 5000;
 }
-
 #music-btn {
     width: 60px;
     height: 60px;
@@ -792,57 +705,45 @@ form input, form textarea {
     align-items: center;
     transition: 0.3s;
 }
-
-
 .spinning {
     animation: rotate 3s linear infinite;
 }
-
-
-/* Mobile Responsive: Mobile-e nicher niche chole ashbe automatically */
 @media (max-width: 768px) {
     .mailbox-grid {
         grid-template-columns: 1fr;
     }
 }
-
-/* --- Mobile Responsive Fixes --- */
 nav #sidemenu, 
 nav .fa-bars, 
 nav .fa-circle-xmark {
     display: none !important;
 }
 
-/* PC-te tomar sticky nav thikmoto show korar jonno */
 #sticky-nav {
     display: block !important;
 }
 @media only screen and (max-width: 600px) {
-    /* 1. Background image-ke mobile-e center kora */
     #header {
         height: 60vh !important;
         background-position: center top !important;
         background-size: cover !important;
         position: relative;
     }
-
-    /* 2. Sahad Logo (Left Side) */
     .logo {
         position: absolute !important;
         top: 10px !important; 
-        left: 15% !important; /* Eita diye baam-daane shorabe */
-        right: auto !important; /* Reset kora holo */
+        left: 15% !important; 
+        right: auto !important;
         width: 70px !important;
         height: auto !important;
         z-index: 1000;
     }
 
-    /* 3. Ornee Logo (Right Side - Ekhon thik hobe) */
     .logo3 {
         position: absolute !important;
-        top: 12px !important; /* Mathar height onujayi niche kora */
-        right: 15% !important; /* Eita diye daan dik theke distance thik hobe */
-        left: auto !important; /* AGER LEFT VALUE TA KETE JABE */
+        top: 12px !important; 
+        right: 15% !important; 
+        left: auto !important; 
         width: 70px !important;
         height: auto !important;
         z-index: 1000;
@@ -850,7 +751,6 @@ nav .fa-circle-xmark {
     }
 
 @media only screen and (max-width: 600px) {
-    /* Puran sticky nav-ta mobile-e bad */
     #sticky-nav {
         display: none !important;
     }
@@ -869,7 +769,7 @@ nav .fa-bars {
         display: block !important;
         position: fixed !important;
         top: 0;
-        right: -200px; /* Shuru-te lukiye thakbe */
+        right: -200px; 
         width: 200px;
         height: 100vh;
         background: #ff4d6d;
@@ -877,12 +777,11 @@ nav .fa-bars {
         transition: right 0.5s;
         padding-top: 50px;
     }
-    /* Side Menu Styling (Slide-in effect) */
     nav ul {
         background: #ff4d6d;
         position: fixed;
         top: 0;
-        right: -200px; /* Hide by default */
+        right: -200px; 
         width: 200px;
         height: 100vh;
         padding-top: 50px;
@@ -904,7 +803,6 @@ nav .fa-bars {
     border-bottom: none !important;
     }
 
-    /* Close button inside menu */
     nav ul .fa-circle-xmark {
         position: absolute;
         top: 25px;
@@ -919,42 +817,34 @@ nav ul li a::after {
     width: 0 !important;
     height: 0 !important;
 }
-
-/* 2. Hover korle jeno kono dag na ashe */
 nav ul li a:hover::after {
     display: none !important;
     width: 0 !important;
 }
 }
 @media only screen and (max-width: 600px) {
-    /* 1. Image boro kora (Jeta tumi choto bolle) */
-    /* Jodi eta about section-er pic hoy */
     .about-col-1 {
-        flex-basis: 100% !important; /* Full width nibe */
+        flex-basis: 100% !important; 
         display: flex !important;
-        justify-content: center !important; /* Horizontally center korbe */
+        justify-content: center !important; 
         align-items: center !important;
         margin-bottom: 30px !important;
     }
     .about-col-1 img {
-        width: 160% !important; /* Age hoyto kom chilo, ekhon boro hobe */
+        width: 160% !important;
         max-width: 350px !important;
         display: block !important;
        margin-left: auto !important;
         margin-right: auto !important;
         border-radius: 15px;
     }
-
-    /* 2. "Our Story" ba Sub-title center-e ana */
     .sub-title {
-        text-align: center !important; /* Left theke middle-e anar jonno */
+        text-align: center !important;
         width: 100% !important;
         display: block !important;
         margin-top: 20px !important;
-        font-size: 35px !important; /* Mobile-er jonno standard size */
+        font-size: 35px !important;
     }
-
-    /* 3. About text-gulo-keo center-e rakhte chaimle eta add koro */
   .about-col-2 {
         flex-basis: 100% !important;
         text-align: center !important;
@@ -962,10 +852,9 @@ nav ul li a:hover::after {
     } .about-col-2 p {
         font-size: 18px !important;
         line-height: 1.6 !important;
-        text-align: center !important; /* Mobile-e center bhalo lage */
+        text-align: center !important;
         margin-bottom: 15px !important;
     }
-    /* 4. Tab links (Skills/Experience) center-e ana */
     .tab-titles {
         display: flex !important;
         justify-content: center !important;
@@ -973,21 +862,19 @@ nav ul li a:hover::after {
     }
     
     .tab-contents ul li {
-        text-align: center !important; /* Mobile-e center alignment */
+        text-align: center !important;
         margin: 10px 0px !important;
         line-height: 1.2 !important;
         
     }
     .tab-contents ul li span {
-    display: block; /* Eita thakle niche nambe */
-    margin-bottom: -10px !important; /* Negative margin dile nicher line upore uthe ashbe */
+    display: block; 
+    margin-bottom: -10px !important;
     color: #ff4d6d;
     font-weight: bold;
 }
 }
-
 @media only screen and (max-width: 600px) {
-    /* 1. Game container height thik kora jate button niche na neme jay */
     #game-container {
         position: relative !important;
         min-height: 450px !important;
@@ -998,29 +885,21 @@ nav ul li a:hover::after {
         padding: 20px !important;
         overflow: hidden !important;
     }
-
-    /* 2. Side quotes gulo-ke button-er upore ba niche pathano */
  .side-quote {
         position: relative !important;
         display: block !important;
         width: 95% !important;
-        margin: 9px auto !important; /* Center alignment */
+        margin: 9px auto !important;
         text-align: center !important;
-        
-        /* Baka bondho korar main line */
         font-style: normal !important; 
-        
-        font-family: 'Quicksand', sans-serif !important; /* Shuja font */
+        font-family: 'Quicksand', sans-serif !important;
         font-size: 12px !important;
         font-weight: 500 !important;
         color: #000000 !important;
-        
-        /* Backdrop effect jate image-er upore bhalo dekha jay */
         background: rgba(255, 77, 109, 0.3) !important;
         padding: 10px !important;
         border-radius: 8px !important;
         line-height: 1.3 !important;
-        
         z-index: 5 !important;
         pointer-events: none !important;
     }
@@ -1028,9 +907,8 @@ nav ul li a:hover::after {
         left: 0 !important;
         right: 0 !important;
         top: 0 !important;
-        transform: none !important; /* Jodi baka kora thake sheta shuja hobe */
+        transform: none !important; 
     }
-    /* 3. Floating hearts-ke background-e pathano */
     .floating-hearts {
         position: absolute !important;
         top: 0;
@@ -1038,13 +916,12 @@ nav ul li a:hover::after {
         width: 100%;
         height: 100%;
         z-index: 0 !important;
-        pointer-events: none !important; /* Ekdom must, jate button click-e badha na dey */
+        pointer-events: none !important; 
     }
 
-    /* 4. Play button ar board-ke shobar upore rakha */
     #start-screen, #play-board {
         position: relative !important;
-        z-index: 20 !important; /* Shobar upore thakbe */
+        z-index: 20 !important; 
         width: 100% !important;
         text-align: center !important;
     }
@@ -1056,14 +933,11 @@ nav ul li a:hover::after {
         border-radius: 15px !important;
         margin-bottom: 15px !important;
     }
-
     #game-question {
         font-size: 18px !important;
         margin: 10px 0 !important;
         line-height: 1.4 !important;
     }
-
-    /* 5. Buttons pashapashi rakha */
     .game-btns {
         display: flex !important;
         justify-content: center !important;
@@ -1071,20 +945,15 @@ nav ul li a:hover::after {
         margin-top: 15px !important;
     }
 }
-/* Footer Style */
-
 @keyframes rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
-
 @keyframes heartbeat {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
-
-/* Mobile adjust */
 @media only screen and (max-width: 600px) {
     #music-container {
         bottom: 20px;
@@ -1095,7 +964,4 @@ nav ul li a:hover::after {
         height: 50px;
         font-size: 20px;
     }
-
 }
-
-
