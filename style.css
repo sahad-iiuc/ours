@@ -585,6 +585,19 @@ body{
     cursor: pointer;
     border: 2px solid transparent;
 }
+.reveal-text p {
+    font-size: 12px !important; /* Tumi joto choto chao eikhane figure change koro */
+    line-height: 1.4;
+    color: #555; /* Ektu halka kalo jate shundor lage */
+    margin-bottom: 8px;
+}
+
+/* Mobile-e jodi aro choto korte chao */
+@media (max-width: 768px) {
+    .reveal-text p {
+        font-size: 11px !important;
+    }
+}
 
 @keyframes heartBeat {
     0% { transform: scale(1); }
@@ -1084,4 +1097,5 @@ nav ul li a:hover::after {
     }
 
 }
+
 
