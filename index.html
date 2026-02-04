@@ -408,7 +408,7 @@ This is my story. One day, I will sit quietly and listen as you tell me yours.
         } else {
             song.pause();
             icon.classList.remove("fa-pause");
-            icon.classList.add("fa-music"); // Pause hole music icon hobe
+            icon.classList.add("fa-music"); 
             document.getElementById("music-btn").classList.remove("spinning");
         }
     }
@@ -418,7 +418,7 @@ This is my story. One day, I will sit quietly and listen as you tell me yours.
     var tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname) {
-        // Prothome shobgulo active class soriye fela
+ 
         for (let tablink of tablinks) {
             tablink.classList.remove("active-link");
         }
@@ -426,7 +426,6 @@ This is my story. One day, I will sit quietly and listen as you tell me yours.
             tabcontent.classList.remove("active-tab");
         }
 
-        // Click kora tab-e active class add kora
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
@@ -464,13 +463,11 @@ function moveNo() {
     const noBtn = document.getElementById("no-btn");
     const question = document.getElementById("game-question");
     const img = document.getElementById("game-img");
-
-    // 1. Image Change Logic
+    
     if (step < gameImages.length) {
         img.src = gameImages[step];
     }
 
-    // 2. Text Change Logic
     if (step === 1) {
         question.innerHTML = "Arreh ami tomake onek jotno korbo💓.. Don't you love me?";
         noBtn.innerHTML = "Absolutely No";
@@ -479,7 +476,6 @@ function moveNo() {
         noBtn.innerHTML = "No";
     }
 
-    // 3. Button Moving Logic (Mobile Safe)
     if (step >= 3) {
         noBtn.style.position = "fixed"; 
         
@@ -493,44 +489,29 @@ function moveNo() {
         noBtn.style.left = randomX + "px";
         noBtn.style.top = randomY + "px";
         
-        // No button-er z-index Yes-er cheye kom rakhlam jate block na kore
         noBtn.style.zIndex = "150"; 
     }
 }
 
-// YES Button Function - Eita add koro thikmoto
 function sayYes() {
     const question = document.getElementById("game-question");
     const noBtn = document.getElementById("no-btn");
     const img = document.getElementById("game-img");
-
-    // 1. Text change
     question.innerHTML = "Yes... I Knew It ❤️ Hahaa faas geya nah mere jaal meh.... I Love You more <3 💗";
-    
-    // 2. No button puro gayeb kore dao jate ar jhamela na kore
     noBtn.style.display = "none";
-    
-    // 3. Final Happy Image (Jodi thake)
     img.src = "us_happy.PNG"; 
-
-    // 4. Ekti extra effects (Optional)
     question.style.color = "#000000";
     question.style.fontSize = "26px";
 }
 </script>
-
 <script>
-
-// 1. Gallery click toggle
 function toggleWork(element) {
-    // Age onno kono active thakle remove kora (optional, ekta ekta boro hobe)
     document.querySelectorAll('.work').forEach(w => {
         if(w !== element) w.classList.remove('active');
     });
     element.classList.toggle('active');
 }
 
-// 2. Letter Logic
 function openLetter() {
     document.getElementById("letter-modal").style.display = "block";
 }
@@ -538,7 +519,6 @@ function closeLetter() {
     document.getElementById("letter-modal").style.display = "none";
 }
 
-// 3. Flower Bouquet Logic
 function giveFlowers() {
     const container = document.getElementById("flower-container");
     const flowers = ['🌹', '🌸', '🌷', '🌻', '💐', '💗'];
@@ -552,12 +532,10 @@ function giveFlowers() {
             flower.style.animationDuration = (Math.random() * 2 + 2) + "s";
             container.appendChild(flower);
             
-            // Remove after animation
             setTimeout(() => flower.remove(), 4000);
         }, i * 100);
     }
 }
-// Cute Pic Modal Logic
 function openCutePic() {
     document.getElementById("cutepic-modal").style.display = "block";
 }
@@ -565,8 +543,6 @@ function openCutePic() {
 function closeCutePic() {
     document.getElementById("cutepic-modal").style.display = "none";
 }
-
-// Window-r baire click korle jate bondho hoy tar logic (Existing logic thakle update koro)
 window.onclick = function(event) {
     let letterModal = document.getElementById("letter-modal");
     let cuteModal = document.getElementById("cutepic-modal");
@@ -577,14 +553,12 @@ window.onclick = function(event) {
         cuteModal.style.display = "none";
     }
 }
-
 </script>
-
 <script>
     function openMedia(src, type) {
     const modal = document.getElementById("media-modal");
     const display = document.getElementById("media-display");
-    display.innerHTML = ""; // Clear previous content
+    display.innerHTML = "";
 
     if (type === 'image') {
         display.innerHTML = `<img src="${src}" alt="Memory">`;
@@ -593,15 +567,12 @@ window.onclick = function(event) {
     }
     modal.style.display = "flex";
 }
-
 function closeMedia() {
     const modal = document.getElementById("media-modal");
     const display = document.getElementById("media-display");
-    display.innerHTML = ""; // Stop video playback when closing
+    display.innerHTML = ""; 
     modal.style.display = "none";
 }
-
-// Existing window.onclick-er bhetore update:
 window.onclick = function(event) {
     let letterModal = document.getElementById("letter-modal");
     let cuteModal = document.getElementById("cutepic-modal");
@@ -609,7 +580,7 @@ window.onclick = function(event) {
     
     if (event.target == letterModal) letterModal.style.display = "none";
     if (event.target == cuteModal) cuteModal.style.display = "none";
-    if (event.target == mediaModal) closeMedia(); // Modal-er baire click korle media bondho hobe
+    if (event.target == mediaModal) closeMedia(); 
 }
 </script>
 <script>
@@ -630,11 +601,9 @@ function setMood(mood) {
         msgBox.style.marginTop = "20px";
     }, 200);
 }
-
 </script>
-            <script>
+<script>
     var sidemenu = document.getElementById("sidemenu");
-
     function openmenu(){
         sidemenu.style.right = "0";
     }
@@ -642,12 +611,9 @@ function setMood(mood) {
         sidemenu.style.right = "-200px";
     }
 </script>
-
-
-        </body>
-
-
+</body>
 </html>
+
 
 
 
