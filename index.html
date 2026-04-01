@@ -25,6 +25,7 @@
         <li><a href="#about" onclick="closemenu()">About Us</a></li>
         <li><a href="#game" onclick="closemenu()">Game</a></li>
         <li><a href="#she" onclick="closemenu()">She</a></li>
+        <li><a href="#guldasta" onclick="closemenu()">Guldasta</a></li>
         <li><a href="#timeline" onclick="closemenu()">Timeline</a></li>
         <li><a href="#emergency" onclick="closemenu()">Emergency</a></li>
         <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
@@ -40,6 +41,7 @@
             <li><a href="#about">About Us</a></li>
             <li><a href="#game">Game</a></li>
             <li><a href="#she">She</a></li>
+             <li><a href="#guldasta">Guldasta</a></li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#emergency">Emergency</a></li>
         </ul> 
@@ -189,6 +191,53 @@ This is my story. One day, I will sit quietly and listen as you tell me yours.
 </div>
 
 <div id="flower-container"></div>
+
+ <!-------------------------------------------Guldasta-------------------------------------------------->
+
+<div id="guldasta">
+    <div class="container">
+        
+        <h1 class="sub-title" style="text-align: center;">Guldasta & You </h1>
+        
+        <div class="guldasta-view-area">
+            <div class="cinematic-box left-slide" id="bouquet-box">
+                <div class="img-wrapper" id="fg-bouquet-img"></div>
+            </div>
+
+            <div class="cinematic-box right-slide" id="ornee-box">
+                <div class="img-wrapper" id="bg-ornee-img"></div>
+            </div>
+            
+            <div class="sparkle-container" id="sparkles"></div>
+        </div>
+
+        <div class="story-box-magical-cinematic" id="story-box">
+            <h3 id="flower-date">Memories</h3>
+            <p id="flower-story">Nicher bouquet gulote click koro magic dekhar jonno!</p>
+        </div>
+
+        <div class="bouquet-list-magical">
+            <div class="bouquet-item-magical" onclick="superCinematic('photo/bouquet1.jpeg', 'photo/ornee1.jpeg', 'April 8, 2025', 'First meet after years, mini bouquet ta shundor, eta purnota theke nisilam 😙 Dekho bouquet ekta amio paisi 😚', this)">
+                <img src="photo/bouquet1.jpeg">
+            </div>
+            <div class="bouquet-item-magical" onclick="superCinematic('photo/bouquet2.jpeg', 'photo/ornee2.jpeg', '31 August, 2025', 'Eta birthday special, jiboner prothom tomar jonno fhul nisi, ashole ki react korba etar o ekta voy chilo 🙃 Tao sahosh kore devpahar er pash theke nisilam😗', this)">
+                <img src="photo/bouquet2.jpeg">
+            </div>
+            <div class="bouquet-item-magical" onclick="superCinematic('photo/bouquet3.jpeg', 'photo/ornee3.jpeg', '30 September, 2025', 'For the 2nd time, beshi boro hoye jai bolso toh sejonno 3 ta😙 Jano oidin tomar kapor er sathe match kore nicchilam je bole, tao 2 color match hoise golap🙂', this)">
+                <img src="photo/bouquet3.jpeg">
+            </div>
+            <div class="bouquet-item-magical" onclick="superCinematic('photo/bouquet4.jpeg', 'photo/ornee4.jpeg', '9 November, 2025', 'Coxs theke eshe tarahuray,erpor tomra o aage ber hoye gesila, late hoye jacchilo, Eta hocche pobortok mor theke nisilam🙃 Dekho tmr sathe manacche💐🪻', this)">
+                <img src="photo/bouquet4.jpeg">
+            </div>
+            <div class="bouquet-item-magical" onclick="superCinematic('photo/bouquet5.jpeg', 'photo/ornee5.jpeg', '29 December, 2025', 'Aibar toh 2 ta 🙂 Amar kono dosh nai, tumi bolso je komay dite, Eta shundor lagse, kintu aitar sathe tmr kono pic nai, thak juice khawar shomoy dicchilam🙃', this)">
+                <img src="photo/bouquet5.jpeg">
+            </div>
+            <div class="bouquet-item-magical" onclick="superCinematic('photo/bouquet6.jpeg', 'photo/ornee6.jpeg', '29 March, 2026', 'Ahhhhhhhhhhhhh aibar shanti🙃Sunflower paisi, A 🌻flower for my sunflower💝 Ador lagtese cutoooo❤️‍🩹 ', this)">
+                <img src="photo/bouquet6.jpeg">
+            </div>
+        </div>
+    </div>
+</div>           
 <!------------------------timeline-------------------------------------------------->
 
 <div id="timeline">
@@ -602,6 +651,7 @@ function setMood(mood) {
     }, 200);
 }
 </script>
+            
 <script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){
@@ -611,6 +661,58 @@ function setMood(mood) {
         sidemenu.style.right = "-200px";
     }
 </script>
+            <script>
+window.onload = function() {
+    const firstItem = document.querySelector('.bouquet-item-magical');
+    if(firstItem) setTimeout(() => firstItem.click(), 500);
+};
+
+function superCinematic(bouquetSrc, orneeSrc, dateText, storyText, element) {
+    const bBox = document.getElementById('bouquet-box');
+    const oBox = document.getElementById('ornee-box');
+    const bImg = document.getElementById('fg-bouquet-img');
+    const oImg = document.getElementById('bg-ornee-img');
+    const storyBox = document.getElementById('story-box');
+    const dateEl = document.getElementById('flower-date');
+    const storyEl = document.getElementById('flower-story');
+
+    bBox.classList.remove('show-cinematic');
+    oBox.classList.remove('show-cinematic');
+    storyBox.style.opacity = "0";
+
+    setTimeout(() => {
+
+        bImg.style.backgroundImage = "url('" + bouquetSrc + "')";
+        oImg.style.backgroundImage = "url('" + orneeSrc + "')";
+        dateEl.innerText = dateText;
+        storyEl.innerText = storyText;
+
+        bBox.classList.add('show-cinematic');
+        oBox.classList.add('show-cinematic');
+        
+        setTimeout(() => {
+            storyBox.style.opacity = "1";
+            createSparklesCin();
+        }, 800);
+
+        document.querySelectorAll('.bouquet-item-magical').forEach(i => i.classList.remove('active'));
+        element.classList.add('active');
+    }, 400); 
+}
+
+function createSparklesCin() {
+    const container = document.getElementById('sparkles');
+    for(let i=0; i<15; i++) {
+        const s = document.createElement('div');
+        s.className = 'sparkle';
+        s.style.left = Math.random() * 100 + "%";
+        s.style.top = Math.random() * 100 + "%";
+        container.appendChild(s);
+        setTimeout(() => s.remove(), 1200);
+    }
+}
+</script>
+
 </body>
 </html>
 
