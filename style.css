@@ -466,7 +466,7 @@ body{
     opacity: 0;
     transform: translateY(20px);
 }
-
+}
 .story-box-magical-cinematic.show-cinematic {
     opacity: 1;
     transform: translateY(0);
