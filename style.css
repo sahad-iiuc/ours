@@ -856,6 +856,39 @@ form input, form textarea {
 .spinning {
     animation: rotate 3s linear infinite;
 }
+#floating-counter {
+    position: fixed !important;
+    bottom: 25px !important;
+    left: 15px !important;
+    right: auto !important;
+    top: auto !important;
+    background: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    z-index: 999999;
+    backdrop-filter: blur(5px);
+    white-space: nowrap;
+}
+
+#floating-counter strong {
+    color: #4CAF50;
+    font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+    #floating-counter {
+        bottom: 25px !important;
+        left: 20px !important;
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+    #floating-counter strong {
+        font-size: 12px;
+    }
+}
 @media (max-width: 768px) {
     .mailbox-grid {
         grid-template-columns: 1fr;
