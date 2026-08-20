@@ -449,6 +449,13 @@ This is my story. One day, I will sit quietly and listen as you tell me yours.
         Your browser does not support the audio element.
     </audio>
 </div>
+<div id="floating-counter">
+    <span>Running: </span>
+    <strong id="days">0</strong>d 
+    <strong id="hours">0</strong>h 
+    <strong id="minutes">0</strong>m 
+    <strong id="seconds">0</strong>s
+</div>
 
 <script>
     function toggleMusic() {
@@ -718,7 +725,25 @@ function createSparklesCin() {
     }
 }
 </script>
-
+<script>
+function updateCounter() {
+    const startDate = new Date(2022, 0, 5, 0, 0, 0);
+    const now = new Date();
+    const diff = now - startDate;
+    if (diff > 0) {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / 1000 / 60) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+    }
+}
+setInterval(updateCounter, 1000);
+updateCounter();
+</script>
 </body>
 </html>
 
